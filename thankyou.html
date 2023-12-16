@@ -6,14 +6,26 @@
     <title>Interactive Rating</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+      // Retrieve the input value from sessionStorage
+      var inputValue = sessionStorage.getItem('userInput');
+
+      // Display the input value on the new page
+      var outputElement = document.getElementById('output');
+      if (outputElement) {
+        outputElement.textContent = 'Input Value: ' + inputValue;
+      }
+    });
+
+    </script>
 
 </head>
 <body>
     <div class="min-w-full min-h-screen p-5 flex place-items-center justify-center bg-black lg:px-300">
         <div class="flex text-white h-2/3 flex-col p-5 gap-5 bg-aboutBlue lg:w-1/4 items-center rounded-xl">
             <img src="./images/illustration-thank-you.svg" alt="" class="w-20">
-            <p class="text-orange text-xs bg-lightBlue p-1.5 rounded-xl font-display text-center">You selected <span>3</span> out of 5 Thank you!</p>
+            <p class="text-orange text-xs bg-lightBlue p-1.5 rounded-xl font-display text-center">You selected <span id="output"></span> out of 5 Thank you!</p>
             <h1 class="font-display font-semibold text-lg">Thank you!</h1>
             <p class="text-center text-xs text-lightGrey">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
             

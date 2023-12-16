@@ -24,7 +24,39 @@
         }
 
     </style>
-    
+    <script>
+        function processCheckbox() {
+      // Get the checkbox element
+      var checkbox = document.getElementById('input1');
+      var checkbox2 = document.getElementById('input2');
+      var checkbox3 = document.getElementById('input3');
+      var checkbox4 = document.getElementById('input4');
+      var checkbox5 = document.getElementById('input5');
+
+      // Check if the checkbox is checked
+      var isChecked = checkbox.checked;
+      var isChecked2 = checkbox2.checked;
+      var isChecked3 = checkbox3.checked;
+      var isChecked4 = checkbox4.checked;
+      var isChecked5 = checkbox5.checked;
+
+      //change to integer
+      var intValue = Number(isChecked);
+      var intValue2 = Number(isChecked2);
+      var intValue3 = Number(isChecked3);
+      var intValue4 = Number(isChecked4);
+      var intValue5 = Number(isChecked5);
+
+      // Counting checkbox
+      var totalValue = intValue + intValue2 + intValue3 + intValue4 + intValue5;
+      
+      //save it to session.store
+      sessionStorage.setItem('userInput', totalValue);
+
+      // Navigate to the new page
+      window.location.href = 'thankyou.html';
+    }
+    </script>
 
 </head>
 <body>
@@ -55,7 +87,7 @@
                     <label for="input5" class="text-white font-display px-3 py-1 rounded-full bg-lightBlue cursor-pointer transition duration-300 group-hover:bg-orange">5</label>
                 </div>
             </div>
-            <button class="flex bg-orange hover:bg-white hover:text-orange font-display items-center justify-center rounded-xl transition duration-300">SUBMIT</button>
+            <button class="flex bg-orange hover:bg-white hover:text-orange font-display items-center justify-center rounded-xl transition duration-300" onclick="processCheckbox()">SUBMIT</button>
             
         </div>
         
