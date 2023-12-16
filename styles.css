@@ -2160,6 +2160,11 @@ video {
     }
   }
 
+  .md\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
   .md\:text-center {
     text-align: center;
   }
@@ -2217,8 +2222,33 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-6\/12 {
+    width: 50%;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .lg\:w-2\/4 {
+    width: 50%;
+  }
+
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
   .lg\:grid-cols-\[200px\2c repeat\(auto-fill\2c minmax\(15\%\2c 100px\)\)\2c 300px\] {
     grid-template-columns: 200px repeat(auto-fill, minmax(15%, 100px)) 300px;
+  }
+
+  .lg\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
   }
 
   .lg\:text-center {
