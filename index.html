@@ -6,34 +6,55 @@
     <title>Interactive Rating</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <style>
+        #input1:checked + label{
+            background-color: hsl(217, 12%, 63%); /* style for checked input */
+        }
+        #input2:checked + label{
+            background-color: hsl(217, 12%, 63%); /* style for checked input */
+        }
+        #input3:checked + label{
+            background-color: hsl(217, 12%, 63%); /* style for checked input */
+        }
+        #input4:checked + label{
+            background-color: hsl(217, 12%, 63%); /* style for checked input */
+        }
+        #input5:checked + label{
+            background-color: hsl(217, 12%, 63%); /* style for checked input */
+        }
+
+    </style>
 
 </head>
 <body>
     <div class="min-w-full min-h-screen p-5 flex place-items-center justify-center bg-black">
-        <div class="flex text-white bg-darkBlue h-2/3 flex-col p-5 gap-5">
+        <div class="flex text-white h-2/3 flex-col p-5 gap-5 bg-aboutBlue">
             <div><img src="./images/icon-star.svg" alt=""></div>
             <div class="text-white text-xl font-display font-bold">How did we do?</div>
             <div class="font-display text-lightGrey">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</div>
             <div class="flex justify-between">
-                <div class="flex w-10 h-10 bg-veryDarkBlue rounded-full place-items-center justify-center">
-                    <div class="text-lightGrey font-display font-semibold">1</div>
+                <div class="group flex">
+                    <input type="checkbox" id="input1" class="hidden">
+                    <label for="input1" class="text-white font-display px-3 py-1 rounded-full bg-lightBlue cursor-pointer transition duration-300 group-hover:bg-orange">1</label>
                 </div>
-                <div class="flex w-10 h-10 bg-veryDarkBlue rounded-full place-items-center justify-center">
-                    <div class="text-lightGrey font-display font-semibold">2</div>
+                <div class="group flex">
+                    <input type="checkbox" id="input2" class="hidden">
+                    <label for="input2" class="text-white font-display px-3 py-1 rounded-full bg-lightBlue cursor-pointer transition duration-300 group-hover:bg-orange">2</label>
                 </div>
-                <div class="flex w-10 h-10 bg-veryDarkBlue rounded-full place-items-center justify-center">
-                    <div class="text-lightGrey font-display font-semibold">3</div>
+                <div class="group flex">
+                    <input type="checkbox" id="input3" class="hidden">
+                    <label for="input3" class="text-white font-display px-3 py-1 rounded-full bg-lightBlue cursor-pointer transition duration-300 group-hover:bg-orange">3</label>
                 </div>
-                <div class="flex w-10 h-10 bg-veryDarkBlue rounded-full place-items-center justify-center">
-                    <div class="text-lightGrey font-display font-semibold">4</div>
+                <div class="group flex">
+                    <input type="checkbox" id="input4" class="hidden">
+                    <label for="input4" class="text-white font-display px-3 py-1 rounded-full bg-lightBlue cursor-pointer transition duration-300 group-hover:bg-orange">4</label>
                 </div>
-                <div class="flex w-10 h-10 bg-veryDarkBlue rounded-full place-items-center justify-center">
-                    <div class="text-lightGrey font-display font-semibold">5</div>
+                <div class="group flex">
+                    <input type="checkbox" id="input5" class="hidden">
+                    <label for="input5" class="text-white font-display px-3 py-1 rounded-full bg-lightBlue cursor-pointer transition duration-300 group-hover:bg-orange">5</label>
                 </div>
             </div>
-            <div class="bg-orange flex justify-center rounded-xl">
-                <button>SUBMIT</button>
-            </div>
+            <button class="flex bg-orange hover:bg-white hover:text-orange font-display items-center justify-center rounded-xl transition duration-300">SUBMIT</button>
             
         </div>
         

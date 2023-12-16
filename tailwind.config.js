@@ -13,6 +13,8 @@ module.exports = {
       'veryDarkBlue': 'hsl(216, 12%, 8%)',
       'black': 'hsl(0,0%,5.49%)',
       'white': 'hsl(0, 0%, 100%)',
+      'lightBlue': 'hsl(210,19.15%,18.43%)',
+      'aboutBlue': 'hsl(215.29,20.99%,15.88%)'
 
     },
     screen: {
