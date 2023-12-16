@@ -24,7 +24,7 @@ module.exports = {
 
     extend: {
       fontFamily: {
-       'display': ['Overpass']
+       'display': ['Overpass','sans']
             },
       fontSize: {
         base: ['15px', '24px'],
